@@ -1,0 +1,93 @@
+<!-- Created by Silvia Fortunato, Nazzareno Marziale, Francesco Nobilia -->
+
+<!doctype html>
+<html>
+	<head>
+		<title>3D Brick Breaker</title>
+		<style>
+			body {
+				background-color: black;
+				margin:0;
+				padding:0;
+			}
+			#gameCanvas {
+				background-color: white;
+				width: 640px;
+				height: 560px;
+				margin: auto;
+				align: center;
+			}
+			#scoreboard {
+				text-align: center;
+				font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+				color: white;
+				margin-top:20px;
+			}
+			#scores {
+				margin-top:3px;
+				background-color: white;
+				color: black;
+				font-size:300%;
+				line-height:60px;
+				text-align: center;
+			}
+			#title {
+				margin-top:3px;
+				background-color: white;
+				color: black;
+				font-size:300%;
+				line-height:60px;
+				text-align: center;
+			}
+			#legend{
+				position:absolute;
+				left:200px;
+				top:250px;
+				color:#FFFFFF;
+			}
+			#powered{
+				position:absolute;
+				left:1150px;
+				top:250px;
+				color:#FFFFFF;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body onload='setup();'>
+		<h1 id='scores'>3D Brick Breaker</h1>
+
+		<div id='gameCanvas'></div>
+		
+		<script src='./Scripts/three.min.js'></script>
+        <script src='./Scripts/function.js'></script>
+		<script src='./Scripts/keyboard.js'></script>
+		<script src='./Scripts/game.js'></script>
+        <script src='./Scripts/level.js'></script>
+        <script src='./Scripts/light.js'></script>
+
+		<div id='scoreboard'>
+        	<h1 id='title'>3D Brick Breaker</h1>
+		</div>
+        
+        <div id="legend">
+        	<h3>LEGEND
+            <br>A - move left
+			<br>D - move right
+            <br>W - next level
+            <br>S - start / reset
+            <br>SPACE - go
+            <br>
+            <br><img src="IMG/Color1.png" width="20px"/> &nbsp; <img  src="IMG/Color2.png" width="20px"/> &nbsp; <img  src="IMG/Color4.png" width="20px"/> &nbsp; 1 hit
+            <br> <br> <img  src="IMG/Color3.png" width="20px"/> &nbsp; 2 hits
+            </h3>
+        </div>
+
+        <div id="powered">
+        	<h3 id='winnerBoard'>Powered by</h3>
+			<h3 id='winnerBoard'>Silvia Fortunato
+			<br>Nazzareno Marziale
+			<br>Francesco Nobilia</h3>
+        </div>
+	</body>
+</html>
